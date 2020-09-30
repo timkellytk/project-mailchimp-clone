@@ -21,7 +21,7 @@ a:hover {
 
 .Signup__flex {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .Signup__divider {
@@ -37,18 +37,14 @@ a:hover {
   height: 100%;
 }
 
-.Signup__art {
-  flex: 1 2;
-  background-color: gold;
-  height: 100%;
-  position: relative;
+.Signup__container {
+  padding: 15%;
 }
 
-.Signup__art-hero {
-  position: absolute;
-  height: 90vh;
-  top: 5vh;
-  left: -5vw;
+.Signup__art {
+  flex: 1 3;
+  background-color: gold;
+  min-height: 500px;
 }
 
 .Signup__logo {
