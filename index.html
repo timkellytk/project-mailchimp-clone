@@ -18,10 +18,78 @@
     />
   </head>
   <body>
-    <h1>Welcome to Mailchimp</h1>
-    <p>
-      Find your people. Engage your customers. Build your brand. Do it all with
-      Mailchimp’s Marketing Platform. Already have an account? Log in
-    </p>
+    <div class="Signup">
+      <div class="Signup__divider"></div>
+      <div class="Signup__body">
+        <img
+          class="Signup__logo"
+          src="assets/mailchimp-logo.svg"
+          height="40px"
+        />
+        <h1 class="Signup__title">Welcome to Mailchimp</h1>
+        <p class="Signup__description">
+          Find your people. Engage your customers. Build your brand. Do it all
+          with Mailchimp’s Marketing Platform. Already have an account? Log in
+        </p>
+        <form class="SignupForm">
+          <label for="email">Email</label>
+          <input class="SignupForm__input" type="email" id="email" />
+          <label for="username">Username</label>
+          <input class="SignupForm__input" type="text" id="username" />
+          <label for="password">Password</label>
+          <input class="SignupForm__input" type="password" id="password" />
+          <ul class="SignupForm__validation">
+            <li class="SignupForm__check">One lowercase character</li>
+            <li class="SignupForm__check">One special character</li>
+            <li class="SignupForm__check">One uppercase character</li>
+            <li class="SignupForm__check">8 characters minimum</li>
+            <li class="SignupForm__check">One number</li>
+          </ul>
+          <input
+            type="checkbox"
+            class="SignupForm__checkbox"
+            name="no-emails"
+            id="no-emails"
+          />
+          <label for="no-emails">
+            I don't want to receive emails about new Mailchimp products, best
+            practices, or special offers.</label
+          ><br />
+          <input class="SignupForm__btn" type="button" value="Sign Up" />
+          <p class="SignupForm__disclaimer">
+            By clicking the "Sign Up" button, you are creating a Mailchimp
+            account, and you agree to Mailchimp's
+            <a
+              href="https://mailchimp.com/legal/terms/?_ga=2.167766334.1204612879.1601443397-154056119.1601271608"
+              >Terms of Use</a
+            >
+            and
+            <a
+              href="https://mailchimp.com/legal/privacy/?_ga=2.93651357.1204612879.1601443397-154056119.1601271608"
+              >Privacy Policy</a
+            >.
+          </p>
+        </form>
+        <footer>
+          ©2001–2020 All Rights Reserved. Mailchimp® is a registered trademark
+          of The Rocket Science Group.
+          <a
+            href="https://mailchimp.com/legal/cookies/?_ga=2.168682913.1204612879.1601443397-154056119.1601271608"
+            >Cookie Preferences</a
+          >,
+          <a
+            href="https://mailchimp.com/legal/privacy/?_ga=2.93651357.1204612879.1601443397-154056119.1601271608"
+            >Privacy</a
+          >, and
+          <a
+            href="https://mailchimp.com/legal/terms/?_ga=2.167766334.1204612879.1601443397-154056119.1601271608"
+            >Terms</a
+          >.
+        </footer>
+      </div>
+      <div class="Signup__art">
+        <img src="assets/art-hero-flowers.png" />
+      </div>
+    </div>
   </body>
 </html>
