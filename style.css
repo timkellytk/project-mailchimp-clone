@@ -5,4 +5,63 @@ h1 {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+a,
+a:hover {
+  color: darkcyan;
+}
+
+.Signup__grid {
+  display: grid;
+  grid-template-columns: 8px auto;
+  min-height: 100vh;
+}
+
+.Signup__flex {
+  display: flex;
+  align-items: center;
+}
+
+.Signup__divider {
+  background-color: gold;
+}
+
+.Signup__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 2 1;
+  height: 100%;
+}
+
+.Signup__art {
+  flex: 1 2;
+  background-color: gold;
+  height: 100%;
+  position: relative;
+}
+
+.Signup__art-hero {
+  position: absolute;
+  height: 90vh;
+  top: 5vh;
+  left: -5vw;
+}
+
+.Signup__logo {
+  padding: 12px;
+}
+
+.Signup__footer {
+  padding: 15px;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(36, 28, 21, 0.65);
+}
+
+.Signup__footer-link {
+  color: rgba(36, 28, 21, 0.65);
 }
