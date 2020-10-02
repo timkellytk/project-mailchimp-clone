@@ -17,25 +17,6 @@ body {
   color: rgb(36, 28, 21);
 }
 
-.SignupForm__validation {
-  list-style: none;
-}
-
-.SignupForm__check::before {
-  content: '\2022';
-  color: teal;
-  font-size: 2em;
-  font-weight: bold;
-  display: inline-block;
-  width: 0.6em;
-}
-.SignupForm__check-span {
-  position: relative;
-  bottom: 0.35em;
-}
-
-/* custom bullet points - https://www.w3schools.com/howto/howto_css_bullet_color.asp */
-
 ul {
   list-style: none;
 }
@@ -76,8 +57,10 @@ a:hover {
 .Signup__container {
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-left: 22%;
-  padding-right: 22%;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 575px;
+  align-self: center;
 }
 
 .Signup__art {
@@ -130,11 +113,25 @@ a:hover {
 }
 
 .SignupForm__validation {
+  list-style: none;
   display: grid;
   grid-template: 1fr / 1fr 1fr;
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 14px;
+}
+
+.SignupForm__check::before {
+  content: '\2022';
+  color: teal;
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  width: 0.6em;
+}
+.SignupForm__check-span {
+  position: relative;
+  bottom: 0.35em;
 }
 
 .SignupForm__submit-container {
@@ -173,19 +170,11 @@ a:hover {
   .Signup__art {
     display: none;
   }
-  .Signup__container {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
 }
 
 @media screen and (max-width: 600px) {
   .Signup__container {
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
