@@ -168,3 +168,24 @@ a:hover {
   margin-top: 40px;
   font-size: 14px;
 }
+
+@media screen and (max-width: 992px) {
+  .Signup__art {
+    display: none;
+  }
+  .Signup__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Signup__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
