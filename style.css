@@ -111,7 +111,8 @@ a:hover {
   height: 44px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid grey;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
   border-radius: 2px;
   margin-top: 10px;
   margin-bottom: 10px;
