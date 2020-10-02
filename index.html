@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;500&family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -35,11 +35,15 @@
               Log in
             </p>
             <form class="SignupForm">
-              <label for="email">Email</label>
+              <label class="SignupForm__input-label" for="email">Email</label>
               <input class="SignupForm__input" type="email" id="email" />
-              <label for="username">Username</label>
+              <label class="SignupForm__input-label" for="username"
+                >Username</label
+              >
               <input class="SignupForm__input" type="text" id="username" />
-              <label for="password">Password</label>
+              <label class="SignupForm__input-label" for="password"
+                >Password</label
+              >
               <input class="SignupForm__input" type="password" id="password" />
               <ul class="SignupForm__validation">
                 <li class="SignupForm__check">One lowercase character</li>
@@ -48,17 +52,19 @@
                 <li class="SignupForm__check">8 characters minimum</li>
                 <li class="SignupForm__check">One number</li>
               </ul>
-              <input
-                type="checkbox"
-                class="SignupForm__checkbox"
-                name="no-emails"
-                id="no-emails"
-              />
-              <label for="no-emails">
-                I don't want to receive emails about new Mailchimp products,
-                best practices, or special offers.</label
-              ><br />
-              <input class="SignupForm__btn" type="button" value="Sign Up" />
+              <div class="SignupForm__submit-container">
+                <button class="SignupForm__btn">Sign Up</button>
+                <input
+                  type="checkbox"
+                  class="SignupForm__checkbox"
+                  name="no-emails"
+                  id="no-emails"
+                />
+                <label class="SignupForm__checkbox-label" for="no-emails">
+                  I don't want to receive emails about new Mailchimp products,
+                  best practices, or special offers.</label
+                ><br />
+              </div>
               <p class="SignupForm__disclaimer">
                 By clicking the "Sign Up" button, you are creating a Mailchimp
                 account, and you agree to Mailchimp's
