@@ -72,16 +72,18 @@
               </ul>
               <div class="SignupForm__submit-container">
                 <button class="SignupForm__btn">Sign Up</button>
-                <input
-                  type="checkbox"
-                  class="SignupForm__checkbox"
-                  name="no-emails"
-                  id="no-emails"
-                />
-                <label class="SignupForm__checkbox-label" for="no-emails">
-                  I don't want to receive emails about new Mailchimp products,
-                  best practices, or special offers.</label
-                ><br />
+                <label class="SignupForm__checkbox-container" for="checkbox"
+                  ><div class="SignupForm__custom-checkbox"></div>
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="checkbox"
+                    style="opacity: 0; position: absolute; z-index: -1"
+                  /><span class="SignupForm__checkbox-label">
+                    I don't want to receive emails about new Mailchimp products,
+                    best practices, or special offers.</span
+                  ></label
+                >
               </div>
               <p class="SignupForm__disclaimer">
                 By clicking the "Sign Up" button, you are creating a Mailchimp
@@ -123,5 +125,11 @@
         <div class="Signup__art"></div>
       </div>
     </div>
+    <script>
+      const checkbox = document.querySelector('.SignupForm__custom-checkbox');
+      checkbox.addEventListener('click', () => {
+        checkbox.classList.toggle('checked');
+      });
+    </script>
   </body>
 </html>
