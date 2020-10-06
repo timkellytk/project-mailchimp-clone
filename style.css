@@ -203,6 +203,14 @@ a:hover {
   .Signup__art {
     display: none;
   }
+  .SignupForm__submit-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .SignupForm__checkbox-container {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 600px) {
